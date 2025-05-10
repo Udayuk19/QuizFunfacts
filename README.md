@@ -1,37 +1,21 @@
-Interactive Quiz & Fun Facts(Joke) App
-This project is a web-based interactive application that combines a Quiz App and a Fun Facts (Joke) App. It is designed to provide an engaging and educational experience for users, allowing them to test their knowledge with a quiz and enjoy random jokes with a single click.
+# QuizFunfacts
 
-Features
-Quiz App:
+This is a web-based interactive application featuring a **Quiz App** to test knowledge with timed questions and progress tracking, and a **Fun Facts (Joke) App** to fetch random jokes using the Chuck Norris API. It includes a responsive design, smooth animations via the AOS library, and an intuitive interface for seamless navigation.
 
-A collection of multiple-choice questions on various topics.
-Timer functionality to challenge users.
-Progress bar to track quiz completion.
-Displays the final score at the end of the quiz.
-Option to restart the quiz.
-Fun Facts (Joke) App:
+## Features
+- **Quiz App**: Test your knowledge with multiple-choice questions.
+- **Fun Facts App**: Fetch random jokes with a single click.
+- **Responsive Design**: Works on all devices.
+- **Smooth Animations**: Powered by AOS library.
 
-Fetches random jokes from the Chuck Norris API.
-Simple and fun interface to display jokes.
-Responsive Design:
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Udayuk19/QuizFunfacts.git
 
-Fully responsive layout that works seamlessly on desktops, tablets, and mobile devices.
-Animations:
 
-Smooth animations powered by the AOS (Animate On Scroll) library.
-
+2. Open index.html in your browser to start the app.
 Technologies Used
-HTML5: For structuring the web page.
-CSS3: For styling and animations.
-JavaScript: For interactivity and logic.
-AOS Library: For scroll-based animations.
-Chuck Norris API: For fetching random jokes.
-
-How to Use
-Clone the repository:
-
-git clone https://github.com/Udayuk19/interactive-quiz-joke-app.git
-
-Open index.html in your browser to start the app.
-Choose between the Quiz App or Fun Facts (Joke) App from the home screen.
-Enjoy the interactive experience!
+HTML5, CSS3, JavaScript
+AOS Library for animations
+Chuck Norris API for jokes
