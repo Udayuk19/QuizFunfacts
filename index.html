@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Quiz & Joke App</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header" data-aos="fade-down">
+    <h1>Welcome to the Interactive App</h1>
+    <p>Choose an activity to get started!</p>
+  </header>
+
+  <div class="container">
+    <!-- Grid Layout for Quiz and Joke Sections -->
+    <div class="grid-layout">
+      <div class="grid-item" onclick="showQuiz()" data-aos="zoom-in">
+        <h2>🧠 Quiz App</h2>
+        <p>Test your knowledge with this interactive quiz.</p>
+      </div>
+      <div class="grid-item" onclick="showJokeApp()" data-aos="zoom-in">
+        <h2>😂 Fun facts</h2>
+        <p>Get random jokes with a single click.</p>
+      </div>
+    </div>
+
+    <!-- Quiz Section -->
+    <div id="quiz-box" class="hidden" data-aos="fade-up">
+      <div id="quiz-header">
+        <h1>🧠 Quiz Challenge</h1>
+        <div id="timer">Time: <span id="time">60</span>s</div>
+      </div>
+      <div id="progress-bar"><div id="progress-inner"></div></div>
+      <div id="question-container">
+        <h2 id="question">Question text</h2>
+        <div id="options" class="options-grid"></div>
+      </div>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-box" class="hidden" data-aos="zoom-in">
+      <h2>🎉 Quiz Completed!</h2>
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <!-- Joke Section -->
+    <div id="joke-section" class="hidden" data-aos="fade-up">
+      <h2>😂 Fun facts</h2>
+      <button onclick="fetchJoke()">Get a Joke</button>
+      <div id="joke" class="api-data"></div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons" data-aos="fade-up">
+      <button onclick="backToGrid()">Back to Home</button>
+      <button onclick="showQuiz()">Switch to Quiz App</button>
+      <button onclick="showJokeApp()">Switch to Fun facts</button>
+    </div>
+  </div>
+
+  <!-- AOS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
